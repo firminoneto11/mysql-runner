@@ -1,0 +1,1 @@
+pyinstaller --onefile --noconsole --uac-admin --icon="sql_icon.ico" MySQL-Runner.py
