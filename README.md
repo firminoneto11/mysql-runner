@@ -20,6 +20,7 @@
 - [x] Pyinstaller
 - [x] Windows OS
 - [x] MySQL 8.0 Database
+- [x] Git
 
 The automation was basically designed for windows machines, because it tracks the 'MYSQL80' server service, if it's either running or stopped.<br/>
 To install the two python packages, type the following code:
@@ -33,6 +34,21 @@ pip install pyinstaller
 # Installing the psutil package
 pip install psutil
 ```
+
+Once you are all set, you can download this repository, by typing the following command:
+
+```git
+git clone https://github.com/firminoneto11/mysql-runner.git
+```
+
+Now that you have everything downloaded and ready to use, you can either execute the 'MySQL-Runner.exe' file in the folder, or you can create
+your own by using the pyinstaller lib. To create your own executable file, type this code on your terminal:
+
+```powershell
+pyinstaller --onefile --noconsole --uac-admin --icon="sql_icon.ico" MySQL-Runner.py
+```
+
+Notice that we are using the '--uac-admin' flag to create the executable because in order to run or stop any windows service, we need to grant administrator access. Also when creating the executable, make sure you open the terminal inside the repository folder, and after it's completion, put the executable in the same folder as the 'sql_icon.ico', to prevent any further erros.
 </p>
 <!--Running--->
 <hr/>
@@ -41,7 +57,7 @@ pip install psutil
 </div>
 <p>If the server is running, the program will tell you the current state, and ask if you want to turn it off.</p><br/>
 <div align='center'>
-<img src='./assets/mysql_server_online.gif'>
+<img src='https://github.com/firminoneto11/mysql-runner/blob/main/assets/mysql_server_online.gif' alt='A gif showing what happens when the server is running'>
 </div>
 <!--Stopped--->
 <hr/>
@@ -50,8 +66,15 @@ pip install psutil
 </div>
 <p>If the server is stopped, the program will tell you the current state, and ask if you want to turn it on.</p><br/>
 <div align='center'>
-<img src='./assets/mysql_server_offline.gif'>
+<img src='https://github.com/firminoneto11/mysql-runner/blob/main/assets/mysql_server_offline.gif' alt='A gif showing what happens when the server is stopped'>
 </div>
+<!--No button pressed-->
+<hr/>
+<div align='center'>
+<h3>👻 'No' button was pressed 👻</h3>
+</div>
+<p>In both states, running or stopped, if the 'No' button is pressed, the following screen will be displayed:<br/></p>
+<img src='https://github.com/firminoneto11/mysql-runner/blob/main/assets/ss1.PNG' alt='No button screen pressed'>
 <!--Author-->
 <hr/>
 <div align='center'>
