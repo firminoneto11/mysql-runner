@@ -48,7 +48,7 @@ your own by using the pyinstaller lib. To create your own executable file, type 
 pyinstaller --onefile --noconsole --uac-admin --icon="sql_icon.ico" MySQL-Runner.py
 ```
 
-Notice that we are using the '--uac-admin' flag to create the executable because in order to run or stop any windows service, we need to grant administrator access. Also when creating the executable, make sure you open the terminal inside the repository folder, and after it's completion, put the executable in the same folder as the 'sql_icon.ico', to prevent any further erros.
+Notice that we are using the '--uac-admin' flag to create the executable because in order to run or stop any windows service, we need to grant administrator access. Also when creating the executable, make sure you open the terminal inside the repository folder, and after it's completion, put the executable in the same folder as the 'sql_icon.ico', to prevent any further errors.
 </p>
 <!--Running--->
 <hr/>
