@@ -1,3 +1,13 @@
+<!--Badges-->
+<div align='center'>
+
+![GitHub top language](https://img.shields.io/github/languages/top/firminoneto11/mysql-runner?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/firminoneto11/mysql-runner?style=for-the-badge)
+![GitHub](https://img.shields.io/github/license/firminoneto11/mysql-runner?style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/firminoneto11/mysql-runner?style=for-the-badge)
+
+</div>
+<!--Starting title-->
 <div align='center'>
 <h1>MySQL Runner</h1>
 </div>
